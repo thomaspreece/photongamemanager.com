@@ -1,6 +1,6 @@
 <?php
 
-$STEAM_KEY="XXX"
-$YOUTUBE_KEY="XXX"
+$STEAM_KEY="XXX";
+$YOUTUBE_KEY="XXX";
 
 ?>
