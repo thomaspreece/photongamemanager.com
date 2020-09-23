@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.2  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGED" CONTENT="20111207;1343600">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<META NAME="CHANGEDBY" CONTENT="Thomas Preece">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 2cm }
+		P { margin-bottom: 0.21cm }
+		H1 { margin-bottom: 0.21cm }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "Lucida Sans Unicode"; font-size: 16pt }
+		H1.ctl { font-family: "Mangal"; font-size: 16pt }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-GB" DIR="LTR">
+<H1 CLASS="western" ALIGN=CENTER>FrontEnd</H1>
+<P STYLE="margin-top: 0.42cm; margin-bottom: 0.5cm; page-break-after: avoid">
+<FONT FACE="Albany, sans-serif"><FONT SIZE=4>Index<BR></FONT></FONT><SPAN STYLE="font-weight: normal"><A HREF="#Function">Function</A><BR><A HREF="#ProgInterface">Program
+Interface</A><BR><A HREF="#Menus">Menus</A><BR><A HREF="#Keys">Keys</A></SPAN></P>
+<P STYLE="margin-top: 0.42cm; margin-bottom: 0.5cm; page-break-after: avoid"><A NAME="Function"></A>
+<FONT FACE="Albany, sans-serif"><FONT SIZE=4>Function</FONT></FONT></P>
+<P ALIGN=LEFT STYLE="font-weight: normal">The FrontEnd is the main
+program contained within the GameManager package, it is the program
+that runs, patches, sorts and showcases your games. Most of
+GameManagers features can be accessed from this program.</P>
+<P STYLE="margin-top: 0.42cm; margin-bottom: 0.5cm; page-break-after: avoid"><A NAME="ProgInterface"></A>
+<FONT FACE="Albany, sans-serif"><FONT SIZE=4>Program Interface</FONT></FONT></P>
+<P ALIGN=LEFT STYLE="font-weight: normal">The Program has three main
+interfaces CoverFlow, NormalView and BannerView which can both be
+accessed from the Tools Menu.</P>
+<P ALIGN=LEFT><B>Cover Flow</B></P>
+<P ALIGN=LEFT><IMG SRC="FrontEnd_html_m3e07fc40.jpg" NAME="graphics1" ALIGN=LEFT WIDTH=529 HEIGHT=296 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P ALIGN=LEFT><B>NormalView</B></P>
+<P ALIGN=LEFT><IMG SRC="FrontEnd_html_m3829a1d1.jpg" NAME="graphics2" ALIGN=LEFT WIDTH=529 HEIGHT=296 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P ALIGN=LEFT><B>BannerView</B></P>
+<P ALIGN=LEFT><IMG SRC="FrontEnd_html_m45ae74b1.jpg" NAME="graphics9" ALIGN=LEFT WIDTH=529 HEIGHT=296 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P ALIGN=LEFT>Despite the three very different viewing modes the
+interface is generally the same. <BR>Left clicking on the Cover art
+will make it go full screen.<BR>Right clicking makes the Cover flip
+to reveal back art. Note all games with back art display this icon on
+there front cover:</P>
+<P ALIGN=LEFT><IMG SRC="FrontEnd_html_m532408df.png" NAME="graphics8" ALIGN=LEFT WIDTH=46 HEIGHT=46 BORDER=0><BR CLEAR=LEFT>Left
+clicking on the background hides all the interface, showing only the
+backdrop until the mouse is moved again.<BR>Also note the 5 Star
+rating and Completed tick box, clicking on each of these changes the
+games rating/completed status respectively.</P>
+<P STYLE="margin-top: 0.42cm; margin-bottom: 0.5cm; page-break-after: avoid"><A NAME="Menus"></A>
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Menus</B></FONT></FONT></P>
+<P ALIGN=LEFT STYLE="font-weight: normal">There are two main menus
+within FrontEnd. Lets take a closer look at the first menu:</P>
+<P ALIGN=LEFT><IMG SRC="FrontEnd_html_4866e95c.jpg" NAME="graphics3" ALIGN=LEFT WIDTH=529 HEIGHT=19 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P ALIGN=LEFT><B>Play</B> &ndash; <SPAN STYLE="font-weight: normal">Starts
+the selected game <BR></SPAN><B>Game List</B> &ndash; <SPAN STYLE="font-weight: normal">Brings
+up the list of all indexed games and allows you to filter by keyword,
+see <A HREF="#GameList">Game List</A><BR></SPAN><B>Tools</B> &ndash;
+<SPAN STYLE="font-weight: normal">Brings up a full screen menu, see
+<A HREF="#Tools">Tools</A></SPAN></P>
+<P ALIGN=LEFT>The second menu is a bit harder to find as it
+automatically hides, hover your mouse over the left edge of the
+screen and the menu will pop out revealing something like below:</P>
+<P ALIGN=LEFT><IMG SRC="FrontEnd_html_m79960ae0.jpg" NAME="graphics10" ALIGN=LEFT WIDTH=194 HEIGHT=336 BORDER=0><BR CLEAR=LEFT>Items
+that are grey are unavailable, they are usually unavailable due to
+there not being any local patches or guides or screen shots. Lets
+take a closer look at what each item does:<BR><B>Info Screen</B> &ndash;
+Brings up the info screen, see <A HREF="#InfoScreen">Info Screen
+</A><BR><B>Filter Games</B> &ndash; Brings up a list of ways to sort
+your games<BR><B>Show Only</B> &ndash; Brings up a list of platforms
+that can be used to filter games<BR><B>Patches</B> &ndash; Brings up
+a list of patches downloaded and allows you to run them, also see
+<A HREF="PatchDownloader.html">PatchDownloader</A><BR><B>Guides</B> &ndash;
+Brings up a list of Guides/Walkthroughs and allows you to view them,
+also see <A HREF="WalkthroughDownloader.html">WalkthroughDownloader</A><BR><B>ScreenShots</B>
+&ndash; Brings up a screen of screenshots, see <A HREF="#ScreenShots">ScreenShot
+Screen</A></P>
+<P ALIGN=LEFT>The last menu item changes depending on what viewing
+mode you are on, if you are in infoview then you can click on
+MiniList: ON/OFF to toggle whether to show the mini list at the right
+of the screen. If you are in BannerView you can click Backdrop:
+ON/OFF to turn the backgrounds on or off.</P>
+<P ALIGN=LEFT><A NAME="GameList"></A><FONT SIZE=4><BR><B>Game List</B></FONT></P>
+<P ALIGN=LEFT STYLE="font-weight: normal; text-decoration: none"><IMG SRC="FrontEnd_html_7cf76e4b.jpg" NAME="graphics4" ALIGN=LEFT WIDTH=529 HEIGHT=274 BORDER=0><BR CLEAR=LEFT>This
+shows a list of all your indexed games, by clicking the arrows you
+can go back and forward a page, note they disappear when you are on
+the first or last page. By typing on the keyboard you can filter the
+list by a keyword, anything you type will appear in the 'Type to
+filter games' box, press backspace to delete characters from your
+keyword. Clicking on any game name will take you to that games page
+and hovering your mouse over each game will change the background to
+that games fan art. Should you wish to return to the game you were on
+previously just click the 'Back' button.</P>
+<P ALIGN=LEFT><A NAME="Tools"></A><FONT SIZE=4><B>Tools</B></FONT><B><BR></B><SPAN STYLE="font-weight: normal">When
+you click tools you will see a menu like below. </SPAN>
+</P>
+<P ALIGN=LEFT><IMG SRC="FrontEnd_html_6b2c5daa.jpg" NAME="graphics5" ALIGN=LEFT WIDTH=529 HEIGHT=295 BORDER=0><BR CLEAR=LEFT><SPAN STYLE="font-weight: normal"><BR>The
+left buttons loads the AutoMount Program, see <A HREF="AutoMount.html">AutoMount</A>,
+Database Manager, see <A HREF="DatbaseManager.html">DatabaseManager</A>,
+and initial setup.<BR>The middle buttons change the viewing mode to
+each specified interface.<BR>The right buttons launch the <A HREF="WalkthroughDownloader.html">Walkthrough
+Downloader</A> and <A HREF="PatchDownloader.html">Patch Downloader</A>
+respectively</SPAN></P>
+<P ALIGN=LEFT><BR><BR>
+</P>
+<P><A NAME="InfoScreen"></A><FONT SIZE=4><B>Info Screen</B></FONT></P>
+<P ALIGN=LEFT><IMG SRC="FrontEnd_html_2e4a0cbd.jpg" NAME="graphics6" ALIGN=LEFT WIDTH=529 HEIGHT=296 BORDER=0><BR CLEAR=LEFT><BR><BR>
+</P>
+<P ALIGN=LEFT>When you press the 'i' key you will see this screen, it
+shows you more info about the game and allows you to change the fan
+art (background) of the game, simply click the 'Change FanArt' button
+and then select your desired fan art (a preview is shown to the
+right). <BR><SPAN STYLE="font-weight: normal">Note: Newly selected
+fanart will not become active until FrontEnd is restarted.</SPAN></P>
+<P ALIGN=LEFT><A NAME="ScreenShots"></A><FONT SIZE=4><B>ScreenShots
+Screen</B></FONT></P>
+<P ALIGN=LEFT STYLE="font-weight: normal">When you click ScreenShots
+from the menu you will be presented with this screen. 
+</P>
+<P ALIGN=LEFT><IMG SRC="FrontEnd_html_m4b211083.jpg" NAME="graphics7" ALIGN=LEFT WIDTH=529 HEIGHT=296 BORDER=0><BR CLEAR=LEFT><SPAN STYLE="font-weight: normal">The
+number of screen shots will change depending on how many you have
+taken and you can move to the next page by using the arrows at the
+bottom left and right of screen. You can add screen shots by pressing
+the global hotkey (set using Setup.exe) in-game while <A HREF="SilentRunner.html">SilentRunner</A>
+is running in the background.<BR>Also clicking on the images makes
+them get bigger and fill the screen and moving mouse reduces there
+size back to original.</SPAN></P>
+<P STYLE="margin-top: 0.42cm; margin-bottom: 0.5cm; page-break-after: avoid">
+<FONT FACE="Albany, sans-serif"><FONT SIZE=4>Keys</FONT></FONT> 
+</P>
+<P STYLE="margin-top: 0.42cm; margin-bottom: 0.5cm">[Main Screen]<BR><B>1
+(one) &ndash; </B><SPAN STYLE="font-weight: normal">Flips Cover<BR></SPAN><B>+
+- </B><SPAN STYLE="font-weight: normal">Toggle full screen view of
+covers</SPAN> <B><BR>L &ndash; </B><SPAN STYLE="font-weight: normal">Brings
+up Game List</SPAN><B><BR>F</B> &ndash; <SPAN STYLE="font-weight: normal">Brings
+up the game filter menu<BR></SPAN><B>S</B> &ndash; <SPAN STYLE="font-weight: normal">Brings
+up the show only menu<BR></SPAN><B>I </B>&ndash; <SPAN STYLE="font-weight: normal">Brings
+up/Closes the game info screen<BR></SPAN><B>T &ndash; </B><SPAN STYLE="font-weight: normal">Brings
+up Tools menu<BR></SPAN><B>F1</B> &ndash; <SPAN STYLE="font-weight: normal">Online
+Help<BR></SPAN><B>F12 &ndash; </B><SPAN STYLE="font-weight: normal">Starts
+Setup program<BR></SPAN><B>Enter</B> &ndash; <SPAN STYLE="font-weight: normal">Starts
+currently selected game<BR></SPAN><B>Left/Right</B> &ndash; <SPAN STYLE="font-weight: normal">Changes
+selected game<BR></SPAN><B>Up/Down</B> &ndash; <SPAN STYLE="font-weight: normal">Changes
+selected game<BR></SPAN><B>ESC &ndash;</B> <SPAN STYLE="font-weight: normal">Closes
+Program or closes uppermost window like filter window</SPAN></P>
+<P STYLE="margin-top: 0.42cm; margin-bottom: 0.5cm"><SPAN STYLE="font-weight: normal">[Game
+List][Filter Menu][ShowOnly Menu]<BR></SPAN><B>Left Arrow</B> &ndash;
+<SPAN STYLE="font-weight: normal">Changes page to previous one<BR></SPAN><B>Right
+Arrow</B> &ndash; <SPAN STYLE="font-weight: normal">Changes page to
+next one<BR></SPAN><B>Up Arrow &ndash; </B><SPAN STYLE="font-weight: normal">Changes
+selected game on list <BR></SPAN><B>Down Arrow &ndash; </B><SPAN STYLE="font-weight: normal">Changes
+selected game on list<BR></SPAN><B>ESC &ndash; </B><SPAN STYLE="font-weight: normal">Exit
+list without selecting a game<BR></SPAN><B>Enter</B> &ndash; <SPAN STYLE="font-weight: normal">Select
+game</SPAN></P>
+<P STYLE="margin-top: 0.42cm; margin-bottom: 0.5cm"><SPAN STYLE="font-weight: normal">[Info
+Screen]<BR></SPAN><B>ESC &ndash; </B><SPAN STYLE="font-weight: normal">Exit
+screen<BR></SPAN><B>I &ndash; </B><SPAN STYLE="font-weight: normal">Exit
+screen<BR></SPAN><B>1 (one) - </B><SPAN STYLE="font-weight: normal">Toggle
+full screen view of screen shot 1<BR></SPAN><B>2 (two) - </B><SPAN STYLE="font-weight: normal">Toggle
+full screen view of screen shot 2</SPAN></P>
+<P ALIGN=LEFT STYLE="margin-top: 0.42cm; margin-bottom: 0.5cm"><SPAN STYLE="font-weight: normal">[Tools
+Menu]<BR></SPAN><B>G</B> &ndash; <SPAN STYLE="font-weight: normal">Walkthrough
+Downloader<BR></SPAN><B>A</B> &ndash; <SPAN STYLE="font-weight: normal">AutoMount
+Settings<BR></SPAN><B>P</B> &ndash; <SPAN STYLE="font-weight: normal">Patch
+Downloader<BR></SPAN><B>C</B> &ndash; <SPAN STYLE="font-weight: normal">Toggle
+Viewing Mode<BR></SPAN><B>ESC &ndash; </B><SPAN STYLE="font-weight: normal">Exit
+Menu</SPAN></P>
+</BODY>
+</HTML>

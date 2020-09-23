@@ -1,0 +1,4 @@
+<Files "error_log">
+Order Allow,Deny
+Deny from all
+</Files>

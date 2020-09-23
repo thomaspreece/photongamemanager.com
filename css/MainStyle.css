@@ -1,0 +1,775 @@
+/*Contact Form Styles */
+
+#ContactSuccessful{
+border-radius: 5px;
+padding:10px;
+text-align:center;
+width:100%;
+background:#D3FFBF;
+}
+
+#ContactError{
+border-radius: 5px;
+padding:10px;
+text-align:center;
+width:100%;
+background:#FF7C7C;
+}
+
+#ContactForm label{
+    margin-top:5px;
+    display:block;
+}
+
+#ContactName, #ContactEmail, #ContactType{
+    height:27px;
+}
+
+#ContactMessage {
+    height:213px;
+}
+
+#ContactType{
+    width:100%;
+    background:#efefef;
+    border:1px solid #dedede;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+#ContactName, #ContactEmail, #ContactMessage, #ContactType{
+    margin-bottom: 5px;
+}
+
+#ContactName, #ContactEmail, #ContactMessage {
+    width:100%;
+    background:#efefef;
+    border:1px solid #dedede;
+	padding:10px 0px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+#ContactName:focus, #ContactEmail:focus, #ContactMessage:focus {
+    border:1px solid #97d6eb;
+}
+
+#ContactSubmit{
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:15px;
+	border : solid 1px #000000;
+	border-radius : 3px;
+	moz-border-radius : 3px;
+	-webkit-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	-moz-box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	box-shadow : 0px 0px 2px rgba(0,0,0,1.0);
+	color : #ffffff;
+	padding : 1px 17px;
+	background : #5f6166;
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5f6166), color-stop(100%,#00060a));
+	background : -moz-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : -webkit-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : -o-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : -ms-linear-gradient(top, #5f6166 0%, #00060a 100%);
+	background : linear-gradient(top, #5f6166 0%, #00060a 100%);
+	filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f6166', endColorstr='#00060a',GradientType=0 );
+	display: block;
+}
+
+#ContactSubmit:hover {
+    opacity:.9;
+	cursor: pointer;
+}
+
+/*AnySlider Styles*/
+/*DownloadSlider*/
+div.DownloadSlider{
+	width:100%;
+	overflow: auto;
+	position: relative;
+	touch-action: pan-y;
+	-ms-touch-action: pan-y;
+}
+
+div.DownloadSliderContainer{
+	position:relative;
+	width:100%
+}
+
+div.DownloadSliderContainer img{
+	width:100%;
+}
+
+
+div.DownloadSliderMasterContainer{
+	max-width:700px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.DownloadSliderMasterContainer .as-nav{
+	margin-top:10px;
+    left: 50%;
+    margin-left: -56px;
+    position: absolute;
+    text-align: left;
+    width: 112px;
+    z-index: 1;
+}
+
+/*OldGmSlider*/
+div.OldGMSlider{
+	width:100%;
+	overflow: auto;
+	position: relative;
+	touch-action: pan-y;
+	-ms-touch-action: pan-y;
+}
+
+div.OldGMSlider{
+	position:relative;
+	width:100%
+}
+
+div.OldGMSlider img{
+	width:100%;
+}
+
+
+div.OldGMSliderMasterContainer{
+	max-width:600px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.OldGMSliderMasterContainer .as-nav{
+	margin-top:10px;
+    left: 50%;
+    margin-left: -72px;
+    position: absolute;
+    text-align: left;
+    width: 144px;
+    z-index: 1;
+}
+
+/*HomeSlider*/
+div.HomeSlider{
+	width:100%;
+	overflow: auto;
+	position: relative;
+	touch-action: pan-y;
+	-ms-touch-action: pan-y;
+}
+
+div.HomeSliderContainer{
+	position:relative;
+	width:100%
+}
+
+div.HomeSliderContent{
+	position:absolute;
+	color:white;
+	height:100%;
+	width:35%;
+	padding-right:1%;
+	padding-left:1%;
+} 
+
+div.HomeSliderVertical{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+div.HomeSliderTitle{
+	font-size:40px;
+	text-align:center;
+}
+
+div.HomeSliderButton{
+	font-size:32px;
+	text-align:center;
+
+}
+
+div.HomeSliderButton a{
+	text-decoration:none;
+	color: white;
+	border: 1px solid white;
+	border-radius:15px;
+	padding:5px 15px;
+	display: inline-block;	
+}
+
+div.HomeSliderButton a:hover{
+	background-color: #16314C;
+}
+
+div.HomeSliderContainer img{
+	width:100%;
+}
+
+div.HomeSliderMasterContainer .as-nav{
+	margin-top:10px;
+    left: 50%;
+    margin-left: -40px;
+    position: absolute;
+    text-align: left;
+    width: 80px;
+    z-index: 1;
+}
+
+/*Slider General*/
+.as-nav a {
+    background: none repeat scroll 0% 0% #666;
+	border-radius: 5px;
+    height: 12px;
+    display: inline-block;
+    margin: 0 1px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+	margin-left:2px;
+	margin-right:2px;
+    width: 12px;
+}
+
+a.as-active, .as-nav a:hover {
+    background: none repeat scroll 0% 0% #000;
+}
+
+.as-prev-arrow, .as-next-arrow {
+    background: url(../Resources/Slider/controls.png) no-repeat;
+	opacity: 1;
+	background-position: 0 -32px;
+    cursor: pointer;
+    height: 31px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    top: 90%;
+	transform: translateY(-15px);
+    white-space: nowrap;
+    width: 32px;
+    z-index: 1;
+}
+
+
+.as-prev-arrow {
+    left: 2%;
+}
+
+.as-next-arrow {
+    background-position: -43px -32px;
+    right: 2%;
+}
+
+.as-prev-arrow:hover{
+	background-position: 0 0px;
+}
+
+.as-next-arrow:hover {
+	background-position: -43px 0px;
+}
+
+/*Footer*/
+#FooterBanner{
+	z-index:2;
+	opacity:0.95;
+	filter:alpha(opacity=95); 
+	background-color: #263D66; 
+	position:absolute; 
+	left:0px; 
+	bottom:0px; 
+	width:100%; 
+	height:25px;
+	display:block;
+}
+
+
+/*Links*/
+div.DownloadLink{
+	font-size:17px;
+	margin-top:15px;
+	margin-bottom:5px;
+	text-align:center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+div.DownloadLink a.DownloadLink{
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+	border: 1px solid black;
+	display:inline-block;	
+}
+
+div.DownloadLink a.DownloadLink:hover{
+	color: white;
+	background-color: #16314C;
+}
+
+a.FooterLink{
+	text-decoration:  none;
+	color: white;
+}
+
+a.FooterLink:hover{
+	color: #D3D3D3;
+}
+
+div.DownloadLink2{
+	font-size:17px;
+	margin-top:15px;
+	margin-bottom:5px;
+	text-align:center;
+}
+
+div.DownloadLink2 a, div.SupportLink a{
+	text-decoration: none;
+	color: #3E157F;
+}
+
+div.DownloadLink2 a:hover, div.SupportLink a:hover{
+	color: #4C4C6B;
+}
+
+a.EmailLink{
+	text-decoration: none;
+	color: #3E157F;
+}
+
+a.EmailLink:hover{
+	color: #4C4C6B;
+}
+
+a.FAQLink, a.FAQLinkTop, a.EmulatorLinkTop, a.GuideLink{
+	color: #121219;
+
+}
+
+a.FAQLink:hover, a.FAQLinkTop:hover, a.EmulatorLinkTop:hover,a.GuideLink:hover{
+	color: #4C4C6B;
+}
+
+a.FAQLinkTop, a.EmulatorLinkTop{
+	font-weight: bold;
+}
+
+
+/*Separators*/
+.FAQSeparator{
+	height: 30px;
+}
+
+.SupportSeparator{
+	height: 15px;
+}
+
+
+
+/*Feature Page & Support Page*/
+
+div.FeatureContainer{
+	padding:25px;
+	margin-top:25px;
+	margin-bottom:25px;
+	position: relative;
+	-moz-border-radius: 20px;
+	border-radius: 20px;	
+}
+
+div.FeatureContainer h2{
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+div.SupportContainer{
+	padding:30px;
+	margin-bottom:20px;
+	position: relative;
+	-moz-border-radius: 20px;
+	border-radius: 20px;	
+	background-color: #C3D3F4;
+}
+
+div.SupportContainer h2{
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+div.HalfSupportContainerLarge{
+	width:42%;
+	display:inline-block;
+}
+
+div.SupportContainer div.FeatureDivLeftLarge{
+	margin-right: 0px;
+}
+
+div.HalfSupportContainer div{
+	text-align: center;
+}
+
+div.FeatureImageLeftLarge{
+	width:100px;
+	margin-left:35px;
+	margin-right:30px;
+	position: absolute;
+	left: 0px;
+	height: 100%	
+}
+
+div.FeatureImageRightLarge{
+	width:100px;
+	margin-left:30px;
+	margin-right:35px;
+	position: absolute;
+	right: 0px;
+	height: 100%
+}
+
+div.FeatureImageLeftLarge div, div.FeatureImageRightLarge div{
+	margin-right:auto;
+	margin-left:auto;
+	top:50%;	
+	position: relative;
+	top: 50%;
+	margin-top: -25px;
+	transform: translateY(-50%);
+}
+
+div.FeatureDivLeftLarge h2, div.FeatureDivRightLarge h2{
+	text-align:left;
+	margin-top:0px;
+	margin-bottom:5px;
+}
+
+div.FeatureDivLeftLarge div{
+	text-align:left;
+}
+
+div.FeatureDivLeftLarge{
+	margin-left:150px;
+	margin-right:60px;
+}
+
+div.FeatureDivRightLarge{
+	margin-right:150px;
+	margin-left:60px;
+}
+
+/*Containers*/
+
+div.DownloadLinkContainer{
+	max-width:500px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+div.TitleContainer{
+	margin-top: 15px;
+	padding:10px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;	
+	background-color: #C3D3F4;
+}
+
+ div.TitleContainer h1{
+	margin-top:0px;
+	margin-bottom: 0px;
+ }
+ 
+div.DownloadContainer{
+	padding:15px;
+}
+
+div.PayPalContainerLarge{
+	width:45%;
+	display:block;
+	float:left;
+	padding:10px;
+	margin-right:2%;
+}
+
+div.PayPalContainerSmall{
+	width:100%;
+	display:block;
+	padding:10px;
+}
+
+
+
+div.PayPalContainer h2, div.DownloadContainer h2{
+	margin-top:0px;
+	text-align: left;
+}
+
+div.FAQContainer, div.PackagesContainer, div.EmulatorContainer, div.GuideContainer{
+	background-color: #C3D3F4;
+	padding:15px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+div.PackagesContainer, div.EmulatorContainer{
+	margin-bottom:20px;
+}
+
+div.FAQContainer h3, div.PackagesContainer h3, div.EmulatorContainer h3{
+	margin-top:0px;
+}
+
+
+
+/*Other*/
+
+table.PackageTable tr td{
+	padding-bottom:20px;	
+}
+
+ul.FAQList li{
+	padding-bottom:5px;
+}
+
+/*V3Help Style*/
+
+.AlignTopBorder{
+	vertical-align:top;
+	border-style:solid;
+	border-width:1px;
+	border-color:#000000;
+	padding:5px;
+}
+
+/*General*/
+#BodyMiddle{
+	background-color: white;
+	border-style:solid;
+	border-width:0px;
+	border-color:#000000;
+	min-height:100%;
+	padding-left:10px;
+	padding-right:10px
+}
+
+body
+{
+	font-family: Arial, sans-serif , "Times New Roman";
+	font-size:14px;
+	background-color: #DBE4F8;
+	margin:0px;
+	border:0px;
+}
+
+html,body{
+	height: 100%;
+}
+
+h1{
+	text-align:center;
+	font-size:24px;		
+}
+
+h2
+{
+	text-align:center;
+	font-size:20px;	
+}
+
+h3{
+	text-align:left;
+	font-size:15px;
+}
+
+sup{
+	font-size: 12px;
+	margin-left:2px;
+}
+
+/*------------------------------------*\
+	NAV
+\*------------------------------------*/
+/*Top Menu*/
+#MainMenu{
+	background-color: #263D66;
+	position: fixed;
+	left:0px;
+	top:0px;
+	padding:0px;
+	margin:0px;
+	border:0px;
+	width:100%;
+	text-align:center;
+	z-index:1000;
+	opacity:0.95;
+	filter:alpha(opacity=95);
+	height:70px;
+}
+
+#MainMenu td, #MainMenu div{
+	padding:0px;
+}
+
+#DropDownMenu{
+	background-color: #263D66;
+	width: 100%;
+}
+
+#DropDownMenu div{
+	width: 100%;
+	height: 70px;
+}
+
+#DropDownMenu:hover #DropDownNav{
+	display:block;
+}
+
+#DropDownNav{
+	display: none;
+	width: 100%;
+	list-style:none;
+	font-weight:bold;
+	margin: 0px;
+	padding:0px;
+}
+
+#DropDownNav li{
+
+	margin: 0px;
+	position:relative;
+	width: 100%;
+}
+
+#DropDownNav a{
+	display:block;
+	width: 100%;
+	height: 64px;
+	line-height:69px; 
+	border-style: solid;
+	border-width: 0px;
+	border-color: white;
+	border-bottom: 5px solid transparent;
+	color:#FFFFFF;
+	font-size:18px;
+	font-family: Source Sans Pro;
+	background-color: transparent;
+	text-align:center;
+	padding:0px;
+	text-decoration:none;
+	margin:auto;
+	background-color: #263D66;	
+}
+
+#DropDownNav a:hover{
+	background-color: #506382;
+}
+
+#MainMenuNav{
+	width: 100%;
+	list-style:none;
+	font-weight:bold;
+	margin: 0px;
+	padding:0px;
+	/* Clear floats */
+	float:left;
+	/* Bring the nav above everything else--uncomment if needed.
+	position:relative;
+	z-index:5;
+	*/
+}
+
+#MainMenuNav li{
+	float:left;
+	margin: 0px;
+	position:relative;
+	width: 20%;
+}
+
+#MainMenuNav a{
+display:block;
+width: 100%;
+height: 64px;
+line-height:69px; 
+border-style: solid;
+border-width: 0px;
+border-color: white;
+border-bottom: 5px solid transparent;
+color:#FFFFFF;
+font-size:18px;
+font-family: Source Sans Pro;
+background-color: transparent;
+text-align:center;
+padding:0px;
+text-decoration:none;
+margin:auto;	
+}
+
+#MainMenuNav li:hover a.supportlink{
+	/* border-bottom: 5px solid transparent; */
+}
+
+#MainMenuNav li a.firstlink:hover{
+	/* #MainMenuNav a:hover - Selecting top menu */
+	/* #MainMenuNav li:hover a - These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	background-color: #506382;
+}
+
+#MainMenuNav li a.selectedfirstlink{
+	border-bottom: 5px solid #83A2DB;
+}
+
+#MainMenuNav li:hover ul {
+  display: block;
+}
+
+
+#MainMenuNav li ul {
+	padding: 0;
+	position: absolute;
+	top: 69px;
+	left: 0;
+	width: 100%;
+	display: none;
+	
+}
+
+#MainMenuNav li ul li { 
+	width:100%;	
+	display: block; 
+	text-shadow: 0 -1px 0 #000;
+}
+
+
+
+#MainMenuNav a.secondlink{ 
+	background-color: #263D66;
+}
+/*purple: #605373*/
+
+#MainMenuNav a.secondlink:hover{
+	background-color: #506382;
+}
+
+#MainMenu{
+	display: block;
+}
+
+#DropDownMenu{
+	display: none;
+}

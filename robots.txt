@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /Includes/
+Disallow: /Resources/
+Disallow: /Downloads/
+Disallow: /GamesEXEDatabase/
+Disallow: /PackageManager/
+
+Disallow: /Guides/V3Help/AutoMount.html
+Disallow: /Guides/V3Help/DatabaseMenus.html
+Disallow: /Guides/V3Help/DatabaseOperation.html
+Disallow: /Guides/V3Help/DatabaseSteam.html
+Disallow: /Guides/V3Help/DatbaseManager.html
+Disallow: /Guides/V3Help/FrontEnd.html
+Disallow: /Guides/V3Help/GameLoaderTray.html
+Disallow: /Guides/V3Help/ImageOptimizer.html
+Disallow: /Guides/V3Help/Index.html
+Disallow: /Guides/V3Help/PatchDownloader.html

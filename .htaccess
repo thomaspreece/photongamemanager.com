@@ -1,0 +1,69 @@
+Options +FollowSymlinks
+Options -Indexes
+RewriteEngine on
+
+#Force HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} !^/GamesEXEDatabase/.*
+RewriteCond %{REQUEST_URI} !^/GameManagerPages/.*
+RewriteCond %{REQUEST_URI} !^/PackageManager/.*
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#ErrorDocument 503 "Our website is temporarily closed for maintenance. Please come back in 20mins :)"
+#RewriteCond %{REMOTE_ADDR} !^93\.97\.124\.23$
+#RewriteCond %{REMOTE_ADDR} !^78\.86\.169\.79$ 
+#RewriteRule .* - [R=503,L]
+
+#Css and js Updating
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)\.[\d]{10}\.(css|js)$ $1.$2 [L]
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+
+DirectoryIndex index.php index.html index.htm index.shtml
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/GameManagerDownload.php* /
+
+RewriteCond %{REQUEST_URI} !\.(gif|png|jpg) [NC]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^Resources.* /  [R,NC]
+
+RewriteCond %{REQUEST_URI} !\.(php|html) [NC]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^GamesEXEDatabase.* /  [R,NC]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^GameManager\.php.* /  [R,NC]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^News\.php.* https://www.facebook.com/pages/Photon-GameManager/126858590746485  [R,NC]
+
+RewriteCond %{http_host} ^www\.photongamemanager\.com [NC]
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://photongamemanager.com/$1 [R=301,NC]
+[R,L,NC]
+
+ErrorDocument 400 /400.php
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
