@@ -13,7 +13,7 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 #ErrorDocument 503 "Our website is temporarily closed for maintenance. Please come back in 20mins :)"
 #RewriteCond %{REMOTE_ADDR} !^93\.97\.124\.23$
-#RewriteCond %{REMOTE_ADDR} !^78\.86\.169\.79$ 
+#RewriteCond %{REMOTE_ADDR} !^78\.86\.169\.79$
 #RewriteRule .* - [R=503,L]
 
 #Css and js Updating
@@ -61,7 +61,6 @@ RewriteCond %{http_host} ^www\.photongamemanager\.com [NC]
 RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
 RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^(.*)$ https://photongamemanager.com/$1 [R=301,NC]
-[R,L,NC]
 
 ErrorDocument 400 /400.php
 ErrorDocument 403 /403.php
